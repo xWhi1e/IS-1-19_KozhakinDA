@@ -51,6 +51,7 @@ namespace IS_1_19_KozhakinDA
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -60,6 +61,7 @@ namespace IS_1_19_KozhakinDA
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
@@ -127,9 +129,9 @@ namespace IS_1_19_KozhakinDA
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(151, 161);
+            this.listBox1.Location = new System.Drawing.Point(171, 161);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.Size = new System.Drawing.Size(360, 134);
             this.listBox1.TabIndex = 11;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
