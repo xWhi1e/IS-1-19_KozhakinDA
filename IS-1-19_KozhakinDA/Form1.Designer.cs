@@ -45,86 +45,95 @@ namespace IS_1_19_KozhakinDA
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(221, 104);
+            this.button1.Location = new System.Drawing.Point(171, 104);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(194, 34);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Посмотреть информацию о процессоре";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(392, 104);
+            this.button2.Location = new System.Drawing.Point(394, 104);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(194, 34);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "Посмотреть информацию о GPU";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(171, 12);
+            this.textBox1.Location = new System.Drawing.Point(187, 10);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(117, 20);
             this.textBox1.TabIndex = 2;
+            this.textBox1.Text = "Введите артикул";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(171, 38);
+            this.textBox2.Location = new System.Drawing.Point(187, 36);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(117, 20);
             this.textBox2.TabIndex = 3;
+            this.textBox2.Text = "Введите цену";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(171, 64);
+            this.textBox3.Location = new System.Drawing.Point(187, 62);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(117, 20);
             this.textBox3.TabIndex = 4;
+            this.textBox3.Text = "Введите год выпуска";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(301, 12);
+            this.textBox4.Location = new System.Drawing.Point(310, 10);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.Size = new System.Drawing.Size(161, 20);
             this.textBox4.TabIndex = 5;
+            this.textBox4.Text = "Введите частоту процессора";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(301, 38);
+            this.textBox5.Location = new System.Drawing.Point(310, 36);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.Size = new System.Drawing.Size(161, 20);
             this.textBox5.TabIndex = 6;
+            this.textBox5.Text = "Введите кол-во ядер";
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(301, 64);
+            this.textBox6.Location = new System.Drawing.Point(310, 62);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.Size = new System.Drawing.Size(161, 20);
             this.textBox6.TabIndex = 7;
+            this.textBox6.Text = "Введите кол-во потоков";
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(431, 12);
+            this.textBox7.Location = new System.Drawing.Point(477, 10);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.Size = new System.Drawing.Size(170, 20);
             this.textBox7.TabIndex = 8;
+            this.textBox7.Text = "Введите частоту GPU";
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(431, 36);
+            this.textBox8.Location = new System.Drawing.Point(477, 36);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.Size = new System.Drawing.Size(170, 20);
             this.textBox8.TabIndex = 9;
+            this.textBox8.Text = "Введите фирму производителя";
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(431, 64);
+            this.textBox9.Location = new System.Drawing.Point(477, 62);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.Size = new System.Drawing.Size(170, 20);
             this.textBox9.TabIndex = 10;
+            this.textBox9.Text = "Введите кол-во памяти GPU";
             // 
             // listBox1
             // 
