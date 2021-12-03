@@ -38,8 +38,19 @@ namespace IS_1_19_KozhakinDA
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //Form4 Form4 = new Form4();
-            //Form4.ShowDialog();
+            Form4 Form4 = new Form4();
+            Form4.ShowDialog();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form5 Form5 = new Form5();
+            Form5.ShowDialog();
         }
     }
 }

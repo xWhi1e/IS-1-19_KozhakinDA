@@ -17,60 +17,50 @@ namespace IS_1_19_KozhakinDA
         {
             InitializeComponent();
         }
-        class sql
+        class Connect
         {
+            public string connStr = "server=caseum.ru;port=33333;user=test_user;database=db_test;password=test_pass;";
 
-            private MySqlConnection connection;
-            private string server;
-            private string database;
-            private string uid;
-            private string password;
-            private string port;
-
-            //Constructor
-            public sql()
+            public void InfoConnect()
             {
-                Initialize();
+                MessageBox.Show(connStr);
             }
+        }
+        
 
-            //Initialize values
-            private void Initialize()
+
+        
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Connect con = new Connect();
+            MySqlConnection conn = new MySqlConnection(con.connStr);
+            bool result = true;
+            try
             {
-                server = "caseum.ru";
-                database = "db_test";
-                uid = "test_server";
-                password = "test_pass";
-                port = "33333";
-                string connectionString;
-                connectionString = "server=caseum.ru;port=33333;user=test_user;" +
-                "database=db_test;password=test_pass;";
-
-                connection = new MySqlConnection(connectionString);
+                conn.Open();
             }
-
-            private bool OpenConnection()
+            catch
             {
-                try
+                result = false;
+            }
+            finally
+            {
+                if (result == true)
                 {
-                    connection.Open();
-                    return true;
+                    MessageBox.Show("Подключение успешно");
                 }
-                catch (MySqlException ex)
+                else
                 {
-                    switch (ex.Number)
-                    {
-                        case 0:
-                            MessageBox.Show("Cannot connect to server.  Contact administrator");
-                            break;
-
-                        case 1045:
-                            MessageBox.Show("Invalid username/password, please try again");
-                            break;
-                    }
-                    return false;
+                    MessageBox.Show("Подключение не произошло");
                 }
+                conn.Close();
             }
-
         }
     }
 }
